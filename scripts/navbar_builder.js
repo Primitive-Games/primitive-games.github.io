@@ -18,16 +18,21 @@ function create_navbar_link(text, link) {
     return LINK;
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const NAVBAR = document.getElementById("navbar");
-
     
     const NAVBAR_LIST = document.createElement("ul");
 
+    const SEARCH_BAR = document.createElement("input");
+        SEARCH_BAR.type = "text";
+        SEARCH_BAR.placeholder = "search";
+        SEARCH_BAR.autocomplete = "off";
+        SEARCH_BAR.id = "search-input"
+
+        NAVBAR.appendChild(SEARCH_BAR);
+
     for (const ITEM_NAME in NAVBAR_MENU) {
-    
     
         const BTN = document.createElement("li");
 
@@ -53,13 +58,5 @@ document.addEventListener("DOMContentLoaded", () => {
         NAVBAR_LIST.appendChild(BTN);
     }
     NAVBAR.appendChild(NAVBAR_LIST);
-
-    const SEARCH_BAR = document.createElement("input");
-    SEARCH_BAR.type = "text";
-    SEARCH_BAR.placeholder = "search";
-    SEARCH_BAR.autocomplete = "off";
-    SEARCH_BAR.id = "search-input"
-
-    NAVBAR.appendChild(SEARCH_BAR);
 
 });

@@ -4,6 +4,9 @@
     position: sticky;
     top: 0;
     width: 100%;
+    background-color: #f9dd53;
+    border-bottom: 0.5px solid black;
+
 }
 
 #navbar ul {
@@ -11,8 +14,6 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f9dd53;
-    border-bottom: 0.5px solid black;
 }
 
 #navbar li {
@@ -64,12 +65,31 @@
 }
 
 #navbar #search-input {
-    margin: auto;
     float: left;
     position: absolute;
     top: 12px;
     right: 10px;
     width: 300px;
+}
+
+@media screen and (max-width: 800px) {
+    
+    #content {
+        margin: 10px 20px;
+    }
+
+    #navbar ul {
+        padding-top: 10px;
+        width: 100%;
+    }
+    
+    #navbar #search-input {
+        position: inherit;
+        padding: 5px;
+        margin: 1px 10px;
+        width: 90%;
+        
+    }
 }
 
 body {
