@@ -4,7 +4,7 @@
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #f9dd53;
+    background-color: #844e15;
     border-bottom: 0.5px solid black;
 
 }
@@ -67,12 +67,12 @@
 #navbar #search-input {
     float: left;
     position: absolute;
-    top: 12px;
+    top: 13px;
     right: 10px;
     width: 300px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
     
     #content {
         margin: 10px 20px;
@@ -94,8 +94,8 @@
 
 body {
     margin: 0px;
-    font-family: 'Patrick Hand';
-    background-color: #faf7d1;
+    font-family: "Sriracha";
+    background-color: #e6c079;
 }
 
 #content {
