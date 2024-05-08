@@ -5,9 +5,9 @@ const NAVBAR_MENU = {
       "Our Story": "./index.html#our-story",
       "Meet the Founders": "./index.html#founders"
     },
-    "Current Project": "",
+    "Current Project": "./project.html",
     "All Games": {
-
+        "???": "./project.html"
     }
 }
 
