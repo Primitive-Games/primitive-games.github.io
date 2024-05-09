@@ -25,12 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const NAVBAR_LIST = document.createElement("ul");
 
     const SEARCH_BAR = document.createElement("input");
-        SEARCH_BAR.type = "text";
-        SEARCH_BAR.placeholder = "search";
-        SEARCH_BAR.autocomplete = "off";
-        SEARCH_BAR.id = "search-input"
+    SEARCH_BAR.type = "text";
+    SEARCH_BAR.placeholder = "search";
+    SEARCH_BAR.autocomplete = "off";
+    SEARCH_BAR.id = "search-input"
 
-        NAVBAR.appendChild(SEARCH_BAR);
+    //NAVBAR.appendChild(SEARCH_BAR);
 
     for (const ITEM_NAME in NAVBAR_MENU) {
     
