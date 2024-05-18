@@ -43,7 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
 
             BTN.classList.add("dropdown");
-            const BTN_LINK = create_navbar_link(ITEM_NAME, "javascript:void(0)");
+            const BTN_LINK = document.createElement("span");
+            BTN_LINK.innerText = ITEM_NAME;
             BTN_LINK.classList.add("dropbtn");
             const CONTENT = document.createElement("div");
             CONTENT.classList.add("dropdown-content");
@@ -60,3 +61,21 @@ document.addEventListener("DOMContentLoaded", () => {
     NAVBAR.appendChild(NAVBAR_LIST);
 
 });
+
+/* STATIC NAVBAR
+<div id="navbar">
+  <ul>
+    <li><a href="./index.html">Home</a></li>
+    <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">About Us</a>
+      <div class="dropdown-content">
+        <a href="./index.html#our-story">Our Story</a>
+        <a href="./index.html#founders">Meet the Founders</a>
+      </div></li>
+    <li><a href="./project.html">Current Project</a></li>
+    <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">All Games</a>
+      <div class="dropdown-content">
+        <a href="./project.html">???</a>
+      </div></li>
+    </ul>
+  </div>
+*/
